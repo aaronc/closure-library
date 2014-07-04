@@ -43,8 +43,9 @@ var goog = goog || {};
 
 /**
  * Reference to the global context.  In most cases this will be 'window'.
+ * Checks to see if goog.global has already been defined.
  */
-goog.global = this;
+goog.global = goog.global || this;
 
 
 /**
